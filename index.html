@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--     icono -->
+    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <title>Nintendo Switch</title>
+</head>
+<body>
+    <!--"gatillo" L -->
+    <div class="lButton"></div>
+    
+    <!-- JOYCON IZQUIERDO-->  
+    <div class="joyconL">
+        
+        <!-- botón "menos" -->
+        <div class="-button"></div>
+        
+        <!-- joystick izquierdo-->
+        <div class="lStick">
+            <div class="intlstick"></div>
+        </div>       
+        <!--los 4 botones pequeños de dirección (triangulos) -->
+        <div class="tButtons">
+                <div class="t1Button">
+                    <div class="triangle1"></div>
+                </div>
+                <div class="t2Button">
+                    <div class="triangle2"></div>
+                </div>
+                <div class="t3Button">
+                    <div class="triangle3"></div>
+                </div>
+                <div class="t4Button">
+                    <div class="triangle4"></div>
+                </div>
+        </div>
+        <!--Botón de captura -->
+        <div class="cButton">
+            <div class="circle"></div>
+        </div>
+    </div>
+    
+    <!--PANTALLA--> 
+    <div class="frameExt">
+        <div class="frameInt">
+            <div class="screen">               
+                 <video id="video" width="498" height="280">  
+                    <source src="img/boot.mp4">   
+                </video> 
+                <script> 
+                    function iniciar() { 
+                        var boton=document.getElementById('video'); 
+                        boton.addEventListener('click', presionar, false); 
+                    } 
+                    function presionar() { 
+                        var video=document.getElementById('video'); 
+                        video.play(); 
+                    } 
+                    window.addEventListener('load', iniciar, false); 
+                </script>              
+            </div>
+        </div>
+    </div>
+    
+    <!--"gatillo" R-->
+    <div class="rButton"></div>
+
+    <!-- JOYCON DERECHO-->  
+    <div class="joyconR">
+        
+        <!-- botón(es) "mas" -->
+        <div class="plusbutton1"></div>
+        <div class="plusbutton2"></div>
+        
+        <!-- joystick derecho    -->
+        <div class="RStick">
+            <div class="intRstick"></div>
+        </div>
+        
+        <!--los 4 botones pequeños de con letras -->
+        <div class="abxyButtons">
+            <div class="Button1">X</div>
+            <div class="Button2">B</div>
+            <div class="Button3">Y</div>
+            <div class="Button4">A</div>
+        </div>
+        <!-- Botón Home -->
+        <div class="homeButton">
+            <div class="circle"></div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Franco Fauda</p>
+    </div>
+</body>
+</html>

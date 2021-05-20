@@ -1,0 +1,443 @@
+*{
+    box-sizing: border-box;
+    background-color: rgb(176, 202, 198);
+    overflow:hidden;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;   
+}
+
+/* marco exterior*/
+.frameExt{
+    height: 350px;
+    width: 580px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 16px rgb(0, 0, 0);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* marco interior*/
+.frameInt{
+    height: 330px;
+    width: 560px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 10px 10px;}
+
+/* pantalla*/
+.screen{
+    height: 270px;
+    width: 494px;
+    background-image: linear-gradient(to bottom right, rgb(87, 86, 86), #0d0d0d 70%);
+    cursor: pointer;
+}
+
+.lButton{
+    position: absolute;
+    height: 55px;
+    width: 105px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 725px;
+    margin-bottom: 308px;
+    background-color: rgb(48, 47, 47);  
+    box-shadow: 0 4px 16px rgb(0, 0, 0);
+    border-radius: 90px 0px 0px 0px;
+    cursor: pointer;
+}
+
+ .joyconL{
+    height: 350px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color:#00c3e3;
+    border-radius: 60px 0px 0px 60px;
+    box-shadow: 0 4px 16px rgb(0, 0, 0);
+    z-index: 2;
+}
+
+.joyconL:hover{
+    transition: 1s;
+    margin-bottom: 80px;
+}
+
+.joyconL .-button{
+    position: relative;
+    height: 7px;
+    width: 21px;
+    margin-top: 15%;
+    margin-left: 75%;
+    background-color: rgb(27, 27, 27);   
+    cursor:pointer;
+}
+
+.joyconL .lStick{
+    position: relative;
+    height: 53px;
+    width: 53px;
+    margin-top: 31%;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(27, 27, 27);   
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgb(0, 0, 0);
+    cursor:pointer; 
+}
+
+.joyconL .lStick .intlstick{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    margin-top: 18%;
+    margin-left: 18%;
+    background: linear-gradient(61deg, rgba(64,64,64,1) 0%, rgba(32,32,32,1) 47%);
+    border-radius: 50%;
+}
+
+.joyconL .lStick .intlstick:hover{
+        background: linear-gradient(43deg, rgba(32,32,32,1) 0%, rgb(44, 44, 44) 0%);
+}
+
+.joyconL .tButtons{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    margin-top: 25%;
+    margin-left: 10%;
+    border-radius: 1px;
+    background-color:#00c5e300;  
+}
+
+.joyconL .tButtons .t1Button{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-top: 7px;
+    margin-left: 0%;
+    background-color: rgb(27, 27, 27);    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+.triangle1 {
+     width: 0; 
+     height: 0;     
+     border-bottom: 12px solid #000000;
+     border-right: 6px solid transparent;
+     border-left: 6px solid transparent; 
+     background-color: rgb(27, 27, 27);   
+}
+
+.joyconL .tButtons .t2Button{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-top: 33%;
+    margin-right: 55%;
+    background-color: rgb(27, 27, 27);    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+.triangle2 {
+     width: 0; 
+     height: 0; 
+     margin-right: 10%;
+     border-right: 12px solid #000000;
+     border-top: 6px solid transparent;
+     border-bottom: 6px solid transparent; 
+     background-color: rgb(27, 27, 27);   
+}
+
+.joyconL .tButtons .t3Button{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-top: 33%;
+    margin-left: 55%;
+    background-color: rgb(27, 27, 27);    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+.triangle3 {
+     width: 0; 
+     height: 0; 
+     border-left: 12px solid #000000;
+     border-top: 6px solid transparent;
+     border-bottom: 6px solid transparent; 
+     background-color: rgb(27, 27, 27);   
+}
+
+.joyconL .tButtons .t4Button{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-top: 61%;
+    margin-left: 0%;
+    background-color: rgb(27, 27, 27);    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+.triangle4 {
+     width: 0; 
+     height: 0;     
+     border-top: 12px solid #000000;
+     border-right: 6px solid transparent;
+     border-left: 6px solid transparent; 
+     background-color: rgb(27, 27, 27);   
+}
+
+.joyconL .cButton{
+    position:absolute;
+    height: 22px;
+    width: 22px;
+    background-color: rgb(27, 27, 27);   
+    margin-top: 252px;
+    margin-left: 73px;
+    box-shadow: 2px 2px 10px #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+.joyconL .cButton .circle{
+    position:absolute;
+    height: 14px;
+    width: 14px;
+    background-color: black; 
+    margin: 10% 10%x 10% 10%;
+    border-radius: 50%;    
+}
+
+.rButton{
+    position: absolute;
+    height: 55px;
+    width: 105px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 722px;
+    margin-bottom: 308px;
+    background-color: rgb(48, 47, 47);  
+    box-shadow: 0 4px 16px rgb(27, 27, 27); 
+    border-radius: 0px 90px 0px 0px;
+    cursor: pointer;
+}
+
+/* control derecho*/
+.joyconR{
+    position: relative;
+    height: 350px;
+    width: 120px;    
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0px 60px 60px 0px; 
+    box-shadow: 0 4px 16px rgb(0, 0, 0);
+}
+
+/* El botón + lo hago con dos elementos superpuestos */
+.joyconR .plusbutton1{
+    position: relative;
+    height: 7px;
+    width: 21px;    
+    margin-bottom: 300px;
+    margin-left: 5%;    
+    background-color: rgb(27, 27, 27);   
+    cursor:pointer;
+}
+
+.joyconR .plusbutton2{
+    position: absolute;
+    height: 21px;
+    width: 7px;    
+    margin-bottom: 300px;
+    margin-left: 11%;    
+    background-color: rgb(27, 27, 27);   
+    cursor:pointer;
+}
+
+/* Botones ABXY */
+.joyconR .abxyButtons{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    margin-bottom: 180px;
+    background-color: red; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+.joyconR .abxyButtons .Button1{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin-top: 7px;
+    margin-left: 35%;
+    background-color: rgb(27, 27, 27);   
+    border-radius: 50%;
+    box-shadow: 5px 10px 15px #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    cursor:pointer;
+}
+
+.joyconR .abxyButtons .Button2{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin-top: 28px;
+    margin-left: 35%;
+    background-color: rgb(27, 27, 27);   
+    border-radius: 50%;
+    box-shadow: 3px 0px 15px #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    cursor:pointer;
+}
+
+.joyconR .abxyButtons .Button3{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-top: 32px;
+    margin-left: 7%;
+    background-color: rgb(27, 27, 27);   
+    border-radius: 50%;
+    box-shadow: 5px 10px 15px #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    cursor:pointer;
+}
+
+.joyconR .abxyButtons .Button4{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-top: 32px;
+    margin-left: 62%;
+    background-color: rgb(27, 27, 27);   
+    border-radius: 50%;
+    box-shadow: 1px 0px 15px #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    cursor:pointer;
+}
+
+.joyconR .RStick{
+    position: absolute;
+    height: 53px;
+    width: 53px;
+    margin-top: 20%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(27, 27, 27);   
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgb(0, 0, 0);
+    cursor:pointer;
+}
+
+.joyconR .RStick .intRstick{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    margin-top: 17%;
+    margin-left: 16%;
+    background: linear-gradient(61deg, rgba(64,64,64,1) 0%, rgba(32,32,32,1) 47%);
+    border-radius: 50%;
+}
+
+.joyconR .RStick .intRstick:hover{
+    background: linear-gradient(13deg, rgba(32,32,32,1) 0%, rgb(44, 44, 44) 0%);
+}
+
+.joyconR .homeButton{
+    position: absolute;
+    height: 29px;
+    width: 29px;    
+    margin-top:170px;
+    margin-left: 18%;
+    background-color: #676868;  
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 16px rgb(0, 0, 0);
+    cursor:pointer;
+}
+
+.joyconR .homeButton .circle{
+    position:absolute;
+    height: 22px;
+    width: 22px;
+    background-color: #333638;      
+    border-radius: 50%;    
+}
+
+/* footer */
+.footer{
+    height: 40px;
+    position: absolute;
+    bottom:0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    font: 85% helvetica;
+    font-weight: bold;
+    color: rgb(83, 83, 83);
+    cursor: default;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.footer:hover{    
+    transform : scale(1.2);
+}
